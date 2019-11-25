@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;
+                width: 500px;
+                height: 100px;
+                margin: auto;
+                font-size: 70px;">
+    <a href="/login/" style="text-decoration: none;">
+                로그인
+            </a></div>
+    <hr>
+<form method="POST">
+    {% csrf_token %}
+<table align="center">
+    <tr><td><input name="userid" type="text" placeholder="계정을 입력하세요"></td></tr>
+    <tr><td><input name="userpw" type="password" placeholder="비밀번호를 입력하세요"></td></tr>
+    <tr><td><input type="submit" value="LOGIN" style="width:100%"></td></tr>
+</table></form></div>
+</body>
+</html>
